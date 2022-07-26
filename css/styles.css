@@ -214,6 +214,35 @@ img {
     margin-right: 0;
 }
 
+.benefits-m-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    background-color: var(--team-bcg);
+    margin-bottom: 30px;
+    
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna_1.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock_2.svg);
+}
+
+.icon-comp::before {
+    background-image: url(../images/comp_3.svg);
+    }
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut_4.svg);
+}
+
 .benefits-title{
     margin-bottom: 10px;
 
