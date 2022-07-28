@@ -348,10 +348,28 @@ img {
 .team-social-link {    
     width: 44px;
     height: 44px;
-    border-radius: 50%;
+    border-radius: 50%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border: 1px solid orange;
-    display: block;
 }
+
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--act-link-txt);
+    }
+
+.team-social-icon {
+    fill: #afb1b8;
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+    fill: var(--act-btn-txt);
+}
+
 
 /*------------clients----------- */
 
