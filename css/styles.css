@@ -141,6 +141,12 @@ img {
     color: var(--act-link-txt);
 }
 
+.mail-icon,
+.tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 /*------------------------main------------------------*/
 
 /*------------solutions------------*/
