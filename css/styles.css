@@ -220,7 +220,7 @@ img {
     display: block;
     content: "";
     height: 120px;
-    background-size: contain;
+    background-size: 70px 70px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
@@ -317,6 +317,7 @@ img {
 .team-member {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: var(--act-btn-txt);
     box-shadow:
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -353,9 +354,7 @@ img {
     border-radius: 50%;    
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    /* border: 1px solid orange; */
+    justify-content: center; 
 }
 
 .team-social-link:hover,
@@ -473,8 +472,7 @@ border-radius: 4px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-}
+    }
 
 /*------------portfolio_menu------------*/
 
@@ -489,18 +487,19 @@ border-radius: 4px;
     margin-bottom: 30px;    
 }
 
-.portfolio-m-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-m-item:nth-child(3n) {
     margin-right: 0;
 }
 
 .portfolio-m-item:nth-last-child(-n+3) {
     margin-bottom: 0;
+}
+
+.portfolio-m-link:hover,
+.portfolio-m-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-m-project {
@@ -611,6 +610,10 @@ border-radius: 4px;
     display: flex;
 }
 
+.join-social-item:not(last-child) {
+    margin-right: 10px;
+}
+
 .join-social-link {
     display: flex;
     width: 44px;
@@ -620,11 +623,6 @@ border-radius: 4px;
     justify-content: center;
     
     background: rgba(255, 255, 255, 0.1);
-    
-}
-
-.join-social-link:not(last-child) {
-    margin-right: 10px;
 }
 
 .join-social-link:hover,
